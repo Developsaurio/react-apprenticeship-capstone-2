@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.418b6149.css",
-    "main.js": "/static/js/main.010da2f2.js",
-    "static/js/787.9dbc2b9c.chunk.js": "/static/js/787.9dbc2b9c.chunk.js",
-    "index.html": "/index.html",
-    "main.418b6149.css.map": "/static/css/main.418b6149.css.map",
-    "main.010da2f2.js.map": "/static/js/main.010da2f2.js.map",
-    "787.9dbc2b9c.chunk.js.map": "/static/js/787.9dbc2b9c.chunk.js.map"
+    "main.css": "/react-apprenticeship-capstone-2/static/css/main.418b6149.css",
+    "main.js": "/react-apprenticeship-capstone-2/static/js/main.ac604dba.js",
+    "static/js/787.9dbc2b9c.chunk.js": "/react-apprenticeship-capstone-2/static/js/787.9dbc2b9c.chunk.js",
+    "index.html": "/react-apprenticeship-capstone-2/index.html",
+    "main.418b6149.css.map": "/react-apprenticeship-capstone-2/static/css/main.418b6149.css.map",
+    "main.ac604dba.js.map": "/react-apprenticeship-capstone-2/static/js/main.ac604dba.js.map",
+    "787.9dbc2b9c.chunk.js.map": "/react-apprenticeship-capstone-2/static/js/787.9dbc2b9c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.418b6149.css",
-    "static/js/main.010da2f2.js"
+    "static/js/main.ac604dba.js"
   ]
 }
