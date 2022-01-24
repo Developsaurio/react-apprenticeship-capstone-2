@@ -2,9 +2,7 @@ import { useState, useEffect } from "react";
 import { format } from "date-fns";
 
 const useFormat = (date) => {
-  const initialDate= format(new Date(), 'yyyy-MM-dd')
-
-  const [newDate, setNewDate] = useState(initialDate);
+  const [newDate, setNewDate] = useState(date);
 
   useEffect(() => {
     if (!!date) {
