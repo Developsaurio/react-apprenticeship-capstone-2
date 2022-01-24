@@ -42,5 +42,6 @@
   },
   "devDependencies": {
     "gh-pages": "^3.2.3"
-  }
+  },
+  "homepage": "https://developsaurio.github.io/react-apprenticeship-capstone-2/"
 }
