@@ -1,24 +1,25 @@
 import React from 'react';
 import DayPicker from 'react-day-picker';
 import 'react-day-picker/lib/style.css';
+import './styles.css';
 
-const Calendar = ({selectedDay, setSelectedDay}) => {
+const Calendar = ({selectedDay, setSelectedDay, loading}) => {
 
-  const handleDayClick = (day, { selected }) => {
-    setSelectedDay(selected ? undefined : day);
+  const handleDayClick = (day, modifiers = {}) => {
+    if (modifiers.disabled) {
+      return alert("Sorry but right now, I can't travel to the future. Try again");
+    }
+    setSelectedDay(modifiers.selected ? undefined : day);
   }
 
     return (
-      <div>
         <DayPicker
           selectedDays={selectedDay}
           onDayClick={handleDayClick}
+          calendarClassName={loading ? "loading" : ""}
+          toMonth={new Date()}
           disabledDays={{after: new Date()}}
         />
-        <p>
-          {selectedDay}
-        </p>
-      </div>
     );
 };
 export default Calendar
