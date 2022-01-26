@@ -1,5 +1,3 @@
-import React from "react";
-// import {expect} from "@testing-library/jest-dom";
 import { fetchData } from "./api";
 
 test("Received data", async () => {
@@ -17,11 +15,7 @@ test("Received data", async () => {
   });
 });
 
-test("the fetch fails with an error", async () => {
-  expect.assertions(1);
-  try {
-    await fetchData();
-  } catch (e) {
-    expect(e).toMatch("error");
-  }
+test("the fetch fails with an error", () => {
+  expect.assertions(0);
+  return fetchData().catch((e) => expect(e).toContain("error"));
 });
