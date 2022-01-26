@@ -1,19 +1,7 @@
 import React from 'react';
-import Calendar from '../components/Calendar';
-import Loading from '../components/Loading';
 import styled from 'styled-components';
-
-const Layout = styled.div`
-    min-height: 100vh;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    background: linear-gradient(360deg, #916fc8ac 0%, #111011b7 50%, #090016 100%);
-`; 
+import Calendar from '../../components/Calendar';
+ 
 const Title = styled.div`
     position: fixed;
     top: 0;
@@ -106,12 +94,7 @@ const ImgVideoContainer = styled.div`
     } 
 `;
 
-const Home = ({isLoading, data, selected, setDate}) => {
-    
-    return (
-    <Layout>
-    {!!isLoading ? <Loading />
-      :
+const DataContent = ({isLoading, data, selected, setDate}) => (
       <>
       <Title>Pick of the day</Title>
 
@@ -149,8 +132,5 @@ const Home = ({isLoading, data, selected, setDate}) => {
         </TextContainer>
      </Grid>
      </>
-     }
-    </Layout>
-   );
-};
-export default Home;
+);
+export default DataContent;
